@@ -1,0 +1,7 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.card {
+  border: fn.rem-calc(1) solid var(--color-gray-010);
+  border-radius: fn.rem-calc(7);
+  padding: fn.rem-calc(14);
+}

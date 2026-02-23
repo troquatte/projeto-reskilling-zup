@@ -1,0 +1,17 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostProductDetailsPage {
+  a {
+    display: inline-block;
+    margin-top: fn.rem-calc(21);
+    margin-bottom: fn.rem-calc(21);
+
+    color: var(--color-gray);
+    text-decoration: underline;
+  }
+
+  h2 {
+    margin-top: fn.rem-calc(21);
+    margin-bottom: fn.rem-calc(21);
+  }
+}

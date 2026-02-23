@@ -1,0 +1,43 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostListComponent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: fn.rem-calc(21);
+  margin-top: fn.rem-calc(21);
+
+  li {
+    width: calc(25% - fn.rem-calc(21));
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: fn.rem-calc(14);
+
+    img {
+      width: 100%;
+      border-radius: fn.rem-calc(7);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-weight: 600;
+        font-size: fn.rem-calc(28);
+        color: var(--color-blue-action);
+      }
+
+      a {
+        font-weight: 600;
+        font-size: fn.rem-calc(18);
+        text-decoration: underline;
+        color: var(--color-blue-action);
+      }
+    }
+  }
+}

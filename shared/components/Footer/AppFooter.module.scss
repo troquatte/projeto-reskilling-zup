@@ -1,0 +1,13 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostFooterComponent {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  margin-top: fn.rem-calc(21);
+  padding: fn.rem-calc(14);
+  text-align: center;
+
+  p {
+    color: var(--color-white);
+  }
+}

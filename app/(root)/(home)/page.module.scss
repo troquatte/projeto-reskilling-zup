@@ -1,0 +1,9 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostHomeComponent {
+  display: block;
+
+  h2 {
+    margin-bottom: fn.rem-calc(0);
+  }
+}

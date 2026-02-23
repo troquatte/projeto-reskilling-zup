@@ -1,0 +1,10 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.container {
+  width: 100%;
+  max-width: fn.rem-calc(1200);
+  margin-inline: auto;
+  padding-inline: fn.rem-calc(16);
+
+  min-height: calc(100dvh - fn.rem-calc(68));
+}

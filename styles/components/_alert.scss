@@ -1,0 +1,18 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.alert {
+  padding: fn.rem-calc(12);
+  border-radius: fn.rem-calc(8);
+  margin-bottom: fn.rem-calc(20);
+  font-weight: 500;
+
+  &--success {
+    background-color: var(--color-green-020);
+    color: var(--color-green-010);
+  }
+
+  &--error {
+    background-color: var(--color-red-020);
+    color: var(--color-red-010);
+  }
+}

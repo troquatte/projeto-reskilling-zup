@@ -1,0 +1,47 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostProductDetails {
+  display: flex;
+  gap: fn.rem-calc(32);
+
+  &.notFound {
+    h1 {
+      font-size: fn.rem-calc(40);
+      color: var(--color-primary);
+      margin: fn.rem-calc(28) 0 fn.rem-calc(35);
+    }
+  }
+
+  img {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: fn.rem-calc(500);
+    aspect-ratio: 1;
+    border-radius: fn.rem-calc(16);
+    overflow: hidden;
+  }
+
+  section {
+    height: stretch;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    div {
+      h1 {
+        font-size: fn.rem-calc(40);
+      }
+
+      p {
+        color: var(--color-gray);
+      }
+
+      span {
+        font-size: fn.rem-calc(32);
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+    }
+  }
+}

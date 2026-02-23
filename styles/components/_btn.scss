@@ -1,0 +1,44 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: fn.rem-calc(10) fn.rem-calc(20);
+  border-radius: fn.rem-calc(8);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.1s ease;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &--primary {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

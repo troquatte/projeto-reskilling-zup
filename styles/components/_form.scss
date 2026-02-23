@@ -1,0 +1,38 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: fn.rem-calc(8);
+  margin-bottom: fn.rem-calc(20);
+
+  label {
+    font-weight: 500;
+    font-size: fn.rem-calc(16);
+    color: var(--color-black);
+  }
+
+  input {
+    width: 100%;
+    padding: fn.rem-calc(12) fn.rem-calc(16);
+    border: fn.rem-calc(1) solid var(--color-gray);
+    border-radius: fn.rem-calc(8);
+    font-size: fn.rem-calc(16);
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: var(--color-primary);
+    }
+
+    &.error {
+      border-color: var(--color-red);
+    }
+  }
+
+  .error-message {
+    color: var(--color-red);
+    font-size: fn.rem-calc(14);
+    margin-top: fn.rem-calc(-4);
+  }
+}

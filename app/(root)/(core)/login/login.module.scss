@@ -1,0 +1,39 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.loginContainer {
+  max-width: fn.rem-calc(500);
+  margin: fn.rem-calc(40) auto;
+  padding: fn.rem-calc(40);
+  background-color: var(--color-white);
+  border-radius: fn.rem-calc(16);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    font-size: fn.rem-calc(32);
+    color: var(--color-black);
+    margin-bottom: fn.rem-calc(8);
+    text-align: center;
+  }
+
+  p {
+    color: var(--color-gray);
+    text-align: center;
+    margin-bottom: fn.rem-calc(32);
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+
+    button[type='submit'] {
+      margin-top: fn.rem-calc(16);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    padding: fn.rem-calc(24);
+    margin: fn.rem-calc(20) auto;
+  }
+}

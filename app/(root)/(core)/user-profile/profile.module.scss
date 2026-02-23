@@ -1,0 +1,64 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.profileContainer {
+  max-width: fn.rem-calc(600);
+  margin: fn.rem-calc(40) auto;
+  padding: fn.rem-calc(40);
+  background-color: var(--color-white);
+  border-radius: fn.rem-calc(16);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: fn.rem-calc(20);
+    margin-bottom: fn.rem-calc(32);
+    padding-bottom: fn.rem-calc(20);
+    border-bottom: 1px solid #e0e0e0;
+
+    img {
+      border-radius: 50%;
+      border: 3px solid var(--color-primary);
+    }
+
+    h1 {
+      font-size: fn.rem-calc(32);
+      color: var(--color-black);
+      margin-bottom: fn.rem-calc(4);
+    }
+
+    p {
+      color: var(--color-gray);
+    }
+  }
+
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input:disabled {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      cursor: not-allowed;
+    }
+
+    small {
+      margin-top: fn.rem-calc(-12);
+      margin-bottom: fn.rem-calc(16);
+      color: var(--color-gray);
+      font-size: fn.rem-calc(12);
+    }
+
+    button[type='submit'] {
+      margin-top: fn.rem-calc(20);
+      align-self: flex-start;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

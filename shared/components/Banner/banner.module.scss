@@ -1,0 +1,58 @@
+@use '@/styles/helpers/rem-calc' as fn;
+
+.hostBannerComponent {
+  width: 100%;
+  height: fn.rem-calc(250);
+  padding: fn.rem-calc(35);
+
+  border-radius: 0 0 fn.rem-calc(14) fn.rem-calc(14);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-primary);
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: fn.rem-calc(27);
+
+    h1 {
+      font-size: fn.rem-calc(44);
+    }
+    p {
+      font-size: fn.rem-calc(21);
+    }
+    h1,
+    p {
+      color: var(--color-white);
+    }
+  }
+
+  .authContainer {
+    .userMenu {
+      display: flex;
+      align-items: center;
+      gap: fn.rem-calc(20);
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: fn.rem-calc(10);
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: 500;
+
+        img {
+          border-radius: 50%;
+          border: 2px solid var(--color-white);
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
