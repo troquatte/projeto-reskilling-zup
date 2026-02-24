@@ -7,11 +7,7 @@ export const productsMock: Array<Product> = [
     slug: 'classic-grey-hooded-sweatshirt',
     price: 90,
     description: 'Elevate your casual wear with our Classic Grey Hooded Sweatshirt.',
-    images: [
-      'https://i.imgur.com/R2PN9Wq.jpeg',
-      'https://i.imgur.com/IvxMPFr.jpeg',
-      'https://i.imgur.com/7eW9nXP.jpeg',
-    ],
+    images: ['/assets/products-images/IvxMPFr_d.webp'],
   },
   {
     id: 2,
@@ -19,11 +15,7 @@ export const productsMock: Array<Product> = [
     slug: 'classic-black-hooded-sweatshirt',
     price: 79,
     description: 'Elevate your casual wardrobe with our Classic Black Hooded Sweatshirt.',
-    images: [
-      'https://i.imgur.com/cSytoSD.jpeg',
-      'https://i.imgur.com/WwKucXb.jpeg',
-      'https://i.imgur.com/cE2Dxh9.jpeg',
-    ],
+    images: ['/assets/products-images/cSytoSD_d.webp'],
   },
   {
     id: 3,
@@ -32,11 +24,7 @@ export const productsMock: Array<Product> = [
     price: 25,
     description:
       'Discover the perfect blend of style and comfort with our Classic Comfort Fit Joggers.',
-    images: [
-      'https://i.imgur.com/ZKGofuB.jpeg',
-      'https://i.imgur.com/GJi73H0.jpeg',
-      'https://i.imgur.com/633Fqrz.jpeg',
-    ],
+    images: ['/assets/products-images/ZKGofuB_d.webp'],
   },
   {
     id: 4,
@@ -44,11 +32,7 @@ export const productsMock: Array<Product> = [
     slug: 'classic-comfort-fit-joggers-alt',
     price: 28,
     description: 'A variation of our perfect blend of style and comfort Joggers.',
-    images: [
-      'https://i.imgur.com/ZKGofuB.jpeg',
-      'https://i.imgur.com/GJi73H0.jpeg',
-      'https://i.imgur.com/633Fqrz.jpeg',
-    ],
+    images: ['/assets/products-images/GJi73H0_d.webp'],
   },
   {
     id: 5,
@@ -57,6 +41,6 @@ export const productsMock: Array<Product> = [
     price: 79,
     description:
       'Experience the perfect blend of comfort and style with our Classic Comfort Drawstring Joggers.',
-    images: ['https://i.imgur.com/mp3rUty.jpeg', 'https://i.imgur.com/JQRGIc2.jpeg'],
+    images: ['/assets/products-images/mp3rUty_d.webp'],
   },
 ];

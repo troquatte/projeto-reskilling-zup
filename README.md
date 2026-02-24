@@ -36,6 +36,11 @@ Apesar do uso massivo de Server Components, não abandonamos as vantagens do lad
 - Como exigido, simulamos uma *autenticação leve* orientada ao Estado Local do navegador. Construímos um `AuthContext` que checa o `localStorage` no Mount (dentro do `useEffect`) e armazena os dados provisórios ali.
 - Implementei edição simples do perfil associando o Contexto com a biblioteca `react-hook-form` e o validador `zod` para extrema segurança dos campos submetidos (schema validation).
 
+### Credenciais para Teste (Mock User):
+Para acessar a área restrita na simulação ("Login"), utilize os dados abaixo conforme definidos no mock do projeto:
+- **E-mail:** `cliente@itau.com.br`
+- **Senha:** `123456`
+
 ---
 
 ## 3. Requisito 4: API Routes e Microserviço Mock
@@ -70,8 +75,7 @@ As cerejas do bolo arquitetural inseridas para maximizar o escore do projeto:
 - **Testes Unitários:** O setup inicial de TDD e automação foi contemplado utilizando **Vitest** (ex: verificador da função transformadora para Moedas em `/shared/utils/format-currency.spec.ts`).
 - **Lazy Loading (Suspense):** Na Home e Detalhe, aplicamos instâncias de proteção a demoras da API envolvendo blocos com `Suspense Boundaries` assíncronos dinâmicos (`<Suspense fallback="...">`).
 - **Acessibilidade de Classe A (a11y):** Fomos além do *tabIndex*. Usamos atributos cirúrgicos do WCAG como **`role="alert"`**, **`aria-live="polite"`**, **`aria-invalid`** e semântica pura (labels nativas interativas e identificação visual invisível de seções do teclado). O usuário é alertado em áudio se o carregamento falhar ou o mock travar.
-
-_* Imagens otimizadas automaticamente através do `next/image` cobrindo otimizações em Webp e placeholdings em 'blur' configurados._
+- **Formato Otimizado (WebP):** Utilização do formato de imagem moderno `.webp` em todos os _assets_ e _mocks_ fotográficos. Essas imagens super leves maximizam a performance real (LCP e FCP) em conjunto com a otimização automática do componente `next/image` (com *placeholdings* em *blur* implementados).
 
 ---
 
