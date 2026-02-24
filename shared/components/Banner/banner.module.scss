@@ -2,21 +2,36 @@
 
 .hostBannerComponent {
   width: 100%;
-  height: fn.rem-calc(250);
+  min-height: fn.rem-calc(250);
+  height: auto;
   padding: fn.rem-calc(35);
 
   border-radius: 0 0 fn.rem-calc(14) fn.rem-calc(14);
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: fn.rem-calc(21);
 
   background-color: var(--color-primary);
 
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding: fn.rem-calc(20);
+    text-align: center;
+  }
+
   .logoContainer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: fn.rem-calc(27);
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      gap: fn.rem-calc(15);
+    }
 
     h1 {
       font-size: fn.rem-calc(44);

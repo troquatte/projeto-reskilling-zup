@@ -13,7 +13,6 @@
   }
 
   img {
-    flex: 1;
     position: relative;
     width: 100%;
     max-width: fn.rem-calc(500);
@@ -43,5 +42,10 @@
         color: var(--color-primary);
       }
     }
+  }
+
+  @media  (max-width: 768px) {
+    flex-direction: column;
+    gap: fn.rem-calc(16);
   }
 }

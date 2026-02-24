@@ -1,15 +1,12 @@
 @use '@/styles/helpers/rem-calc' as fn;
 
 .hostListComponent {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(fn.rem-calc(260), 1fr));
   gap: fn.rem-calc(21);
   margin-top: fn.rem-calc(21);
 
   li {
-    width: calc(25% - fn.rem-calc(21));
-
     display: flex;
     justify-content: space-between;
     flex-direction: column;

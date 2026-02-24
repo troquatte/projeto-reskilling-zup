@@ -80,7 +80,7 @@ export default function UserProfile() {
             <h1>Meu Perfil</h1>
             <p>Gerencie suas informações pessoais</p>
             <Link href="/" className="btn btn--primary">
-              Voltar para a página inicial
+              Página inicial
             </Link>
           </div>
         </header>

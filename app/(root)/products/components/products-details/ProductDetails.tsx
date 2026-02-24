@@ -27,8 +27,10 @@ export const ProductDetails = ({ slug }: { slug: string }) => {
     );
   }
 
-  if (isError || !product) {
-    return (
+ 
+
+  return (
+    (isError || !product) ? (
       <div
         className={styles.hostProductDetails + ' ' + styles.notFound}
         role="alert"
@@ -36,10 +38,7 @@ export const ProductDetails = ({ slug }: { slug: string }) => {
       >
         <h1>Produto não encontrado</h1>
       </div>
-    );
-  }
-
-  return (
+    ) : (
     <article
       className={styles.hostProductDetails}
       aria-label={`Detalhes do produto: ${product.title}`}
@@ -62,5 +61,5 @@ export const ProductDetails = ({ slug }: { slug: string }) => {
         </div>
       </section>
     </article>
-  );
+  ));
 };

@@ -45,7 +45,7 @@ export default async function ProductsSlug({ params }: { params: Promise<{ slug:
         {!!queryClient.getQueryData(['product-detail', slug]) && (
           <section aria-labelledby="related-products-title">
             <div className={styles.hostProductDetailsPage}>
-              <h1 id="related-products-title">Produtos Relacionados</h1>
+              <h2 id="related-products-title">Produtos Relacionados</h2>
             </div>
             <Suspense
               fallback={
